@@ -1,0 +1,125 @@
+
+body {
+    background-color: #282c34;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #61dafb;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+#difficulty-select {
+    padding: 5px;
+    background-color: #282c34;
+    color: white;
+    border: 2px solid #61dafb;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#difficulty-select:focus {
+    outline: none;
+}
+
+
+#gameCanvas {
+    background-color: #333;
+    border: 3px solid #61dafb;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    aspect-ratio: 1 / 1;  
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #61dafb;
+    color: #282c34;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    width: 90px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #21a1f1;
+}
+
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.controls div {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 10px;
+        width: 80px;
+    }
+
+    .scoreboard {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 0.8rem;
+        padding: 8px;
+        width: 70px;
+    }
+
+    .scoreboard {
+        font-size: 0.8rem;
+    }
+
+    #gameCanvas {
+        max-width: 300px;  
+    }
+}
